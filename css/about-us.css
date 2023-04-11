@@ -1,0 +1,205 @@
+.banner-1 {
+    position: relative;
+}
+
+.banner-1 img {
+    width: 100%;
+}
+
+.banner-1 .bann-txt {
+    opacity: .5;
+    position: absolute;
+    bottom: 3px;
+    background-color: #3d3739;
+    width: 100%;
+    padding: 20px 0 20px 80px;
+    font-weight: 500;
+}
+
+.banner-1 .bann-txt h2 {
+    color: #fff;
+    opacity: 1;
+    text-transform: uppercase;
+}
+
+.who-we-are {
+    padding: 50px 0;
+}
+
+.who-we-are .who-txt {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.who-we-are .who-txt h3,
+.our-mision .mission-txt h3,
+.our-mision .commit-txt h3 {
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.who-we-are .who-txt p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.who-we-are .img-card .imgs {
+    width: calc(25% - 38px);
+    position: relative;
+    z-index: -1;
+    margin-right: 50px;
+}
+
+.who-we-are .img-card .imgs:last-of-type {
+    margin-right: 0;
+}
+
+.who-we-are .img-card .imgs::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border: 1px solid #3d3739;
+    position: absolute;
+    right: -12px;
+    bottom: -10px;
+}
+
+.who-we-are .img-card .imgs img {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.our-mision {
+    padding: 60px 0;
+}
+
+.our-mision .mission-txt {
+    width: 50%;
+    padding-right: 50px;
+}
+
+.our-mision .mission-img {
+    width: 50%;
+}
+
+.our-mision .mission-img img {
+    width: 100%;
+}
+
+.our-mision .commit-txt {
+    width: 50%;
+    padding-left: 50px;
+}
+
+@media(max-width:767px) {
+    .banner-1 .bann-txt {
+        padding: 10px 0 10px 40px;
+    }
+
+    .banner-1 .bann-txt h2 {
+        font-size: 44px;
+    }
+
+    .who-we-are {
+        padding: 30px 0;
+    }
+
+    .who-we-are .who-txt h3,
+    .our-mision .mission-txt h3,
+    .our-mision .commit-txt h3 {
+        padding-bottom: 10px;
+        padding: 10px 0;
+        font-size: 36px;
+    }
+
+    .who-we-are .who-txt p {
+        font-size: 14px;
+    }
+
+    .who-we-are .who-txt {
+        padding-bottom: 30px;
+    }
+
+    .our-mision {
+        padding: 20px 0;
+    }
+
+    .our-mision .mission-txt {
+        width: 100%;
+        padding-right: 0px;
+    }
+
+    .our-mision .mission-txt p {
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+
+    .our-mision .mission-img {
+        width: 100%;
+    }
+
+    .our-mision .commit-txt {
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .our-mision .commit-txt p {
+        font-size: 14px;
+    }
+
+    .who-we-are .img-card .imgs {
+        width: calc(50% - 19px);
+        position: relative;
+        z-index: -1;
+        margin-right: 38px;
+        margin-bottom: 30px;
+    }
+
+    .who-we-are .img-card .imgs:nth-child(2n) {
+        margin-right: 0;
+    }
+}
+
+@media(max-width:480px) {
+    .banner-1 .bann-txt h2 {
+        font-size: 24px;
+    }
+
+    .banner-1 .bann-txt {
+        padding: 8px 0 8px 18px;
+    }
+
+    .who-we-are {
+        padding: 10px 0;
+    }
+
+    .who-we-are .img-card .imgs {
+        width: calc(100% - 15px);
+        margin-right: 15px !important;
+    }
+
+    .who-we-are .who-txt h3,
+    .our-mision .mission-txt h3,
+    .our-mision .commit-txt h3 {
+        font-size: 26px;
+        padding-bottom: 5px;
+    }
+
+    .who-we-are .who-txt p {
+        font-size: 12px;
+    }
+
+    .our-mision {
+        padding: 0px;
+    }
+
+    .our-mision .mission-txt p {
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
+
+    .our-mision .commit-txt p {
+        font-size: 12px;
+    }
+}

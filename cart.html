@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+
+<body>
+
+    <!-- Search bar section start -->
+    <section class="popup">
+        <div class="popup__content">
+            <div class="close">
+                <span></span>
+                <span></span>
+            </div>
+            <form action="">
+                <input type="search" placeholder="Search here...">
+                <input type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </form>
+        </div>
+    </section>
+    <!-- Search bar section close -->
+
+    <!-- Header Section Start -->
+    <header class="header header-secondary">
+        <div class="container">
+            <div class="top-head flex">
+                <div class="th-1">
+                    <a href="javascript:void(0)" class="toogle"><img src="images/menu.png" alt=""></a>
+                    <a href="javascript:void(0)" class="search-btn"><img src="images/search.png" alt=""></a>
+                </div>
+                <div class="th-2">
+                    <a href=""><img src="images/logo.png" alt=""></a>
+                </div>
+                <div class="th-3">
+                    <a href="cart.html"><img src="images/bag.png" alt=""></a>
+                    <a href="profile.html"><img src="images/profile.png" alt=""></a>
+                </div>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="collection.html">Collection</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
+                    <li><a href="artist.html">Artist</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section Close -->
+
+    <!-- breadcrumbs start -->
+    <div class="container">
+        <div class="nav-sec">
+            <ul>
+                <li>Home</li>
+                <li>Cart</li>
+            </ul>
+        </div>
+    </div>
+    <!-- breadcrumbs close -->
+
+    <!-- Cart section start -->
+    <section class="cart">
+        <div class="container">
+            <div class="cart-title flex">
+                <h3>your shopping cart<span>(2 items)</span></h3>
+                <p>Need Help? Call +91000 000 00</p>
+            </div>
+            <div class="main-cart flex">
+                <div class="item-details">
+                    <div class="cart-1 flex">
+                        <div class="image">
+                            <a href=""><img src="images/c-bg.png" alt=""></a>
+                        </div>
+                        <div class="product-details">
+                            <div class="name-price flex">
+                                <p>product name</p>
+                                <p>price</p>
+                            </div>
+                            <div class="name-price-detail flex">
+                                <a href="">bal gopal</a>
+                                <p>₹55049</p>
+                            </div>
+                            <div class="quantity flex">
+                                <div class="selection">
+                                    <a href="#" class="quantity__minus"><i class="fa-solid fa-minus"></i></a>
+                                    <input name="quantity" type="text" class="quantity__input" value="1">
+                                    <a href="#" class="quantity__plus"><i class="fa-solid fa-plus"></i></a>
+                                </div>
+                                <a href=""><i class="fa-solid fa-trash"></i>Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-1 flex">
+                        <div class="image">
+                            <a href=""><img src="images/c-b.png" alt=""></a>
+                        </div>
+                        <div class="product-details">
+                            <div class="name-price flex">
+                                <p>product name</p>
+                                <p>price</p>
+                            </div>
+                            <div class="name-price-detail flex">
+                                <a href="">buddha</a>
+                                <p>₹11009</p>
+                            </div>
+                            <div class="quantity flex">
+                                <div class="selection">
+                                    <a href="#" class="quantity__minus"><i class="fa-solid fa-minus"></i></a>
+                                    <input name="quantity" type="text" class="quantity__input" value="1">
+                                    <a href="#" class="quantity__plus"><i class="fa-solid fa-plus"></i></a>
+                                </div>
+                                <a href=""><i class="fa-solid fa-trash"></i>Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="total">
+                        <p>Subtotal(2 Items): <span>₹66058</span></p>
+                    </div>
+                </div>
+                <div class="summary">
+                    <div class="payment">
+                        <p>Payment Summary</p>
+                        <input class="pincode" type="text" placeholder="enter promocode">
+                        <input type="button" value="Check">
+                    </div>
+                    <div class="bill">
+                        <div class="money flex">
+                            <p>Subtotal</p>
+                            <p>₹66058</p>
+                        </div>
+                        <div class="money flex">
+                            <p>Estimated Sales Tax</p>
+                            <p>TBD</p>
+                        </div>
+                        <div class="money flex">
+                            <p>Estimated Total</p>
+                            <p>₹66058</p>
+                        </div>
+                        <div class="checkout">
+                            <a href="">Checkout</a>
+                        </div>
+                        <div class="continue">
+                            <a href="">Continue Shopping</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Cart section close -->
+
+    <!-- footer section start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <img src="images/name.png" alt="">
+            </div>
+            <div class="row flex">
+                <div class="cols">
+                    <ul>
+                        <li><a href="">Collection</a></li>
+                        <li><a href="">Blogs</a></li>
+                        <li><a href="">Artist</a></li>
+                    </ul>
+                </div>
+                <div class="cols">
+                    <ul>
+                        <li><a href="">Return Policy</a></li>
+                        <li><a href="">Order Online</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="cols">
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Account</a></li>
+                        <li><a href="">Delivery</a></li>
+                    </ul>
+                </div>
+                <div class="letter">
+                    <form>
+                        <p>Subscribe to receive grape news & offers</p>
+                        <div class="form-group mailfield">
+                            <input type="text" placeholder="Enter your Email" class="form-in">
+                            <span>
+                                <input type="submit" value="submit">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </span>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox"><label>I consent to lasyaarthouse sending me marketing
+                                communications</label>
+                        </div>
+                    </form>
+                    <div class="socials">
+                        <ul>
+                            <li><a href="">Instagram</a></li>
+                            <li><a href="">Twitter</a></li>
+                            <li><a href="">Facebook</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section close -->
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/custom.js"></script>
+
+</html>

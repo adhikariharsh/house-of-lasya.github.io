@@ -1,0 +1,375 @@
+.top-nav .container.flex {
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.top-nav .nav-txt h3 {
+    text-transform: uppercase;
+}
+
+.top-nav .search-bar {
+    position: relative;
+}
+
+.top-nav .search-bar .textfield input {
+    width: 100%;
+    outline: none;
+    padding: 10px 35px 10px 35px;
+}
+
+.top-nav .search-bar .textfield .btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 1;
+    padding: 0;
+    background: transparent;
+}
+
+.top-nav .search-bar .icons {
+    position: absolute;
+    top: 11px;
+    left: 9px;
+}
+
+.orders .container.flex {
+    align-items: flex-start;
+}
+
+.orders .acc-details {
+    width: 20%;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.orders .acc-details ul li {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 0 10px 10px;
+    position: relative;
+}
+
+.orders .acc-details ul li::after {
+    position: absolute;
+    content: '';
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #D9D9D9;
+}
+
+.orders .acc-details ul li:nth-child(1)::after {
+    display: none;
+}
+
+.orders .acc-details ul li.active {
+    background-color: #F6EEDB;
+}
+
+.orders .acc-details .fa-solid {
+    font-size: 12px;
+    position: absolute;
+    right: 30px;
+    bottom: 15px;
+    cursor: pointer;
+}
+
+.orders .order-summary {
+    padding-left: 20px;
+    width: 80%;
+}
+
+.order-summary .child ul {
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.order-summary .child ul li {
+    padding: 0 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.order-summary .child ul li::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #D9D9D9;
+    bottom: -5px;
+    left: 0;
+    transition: 0.5s;
+}
+
+.order-summary .child ul li:hover:after {
+    width: 100%;
+}
+
+.order-details {
+    border: 1px solid #3d3739;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.order-details .sumup {
+    background-color: #F6EEDB;
+    border-radius: 5px;
+}
+
+.order-details .sumup ul {
+    display: flex;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.order-details .sumup ul li {
+    font-size: 12px;
+    padding: 0 20px;
+}
+
+.order-details .sumup ul li:nth-child(4) {
+    margin-left: auto;
+}
+
+.order-details .sumup ul li p {
+    font-size: 14px;
+}
+
+.order-details .sumup .fa-solid {
+    margin-left: 5px;
+}
+
+.order-details .detailed {
+    padding: 0px 20px 20px 20px;
+}
+
+.order-details .detailed .date {
+    padding: 20px 0;
+}
+
+.order-details .detailed .date p {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.abt-product .image img {
+    border: 0.5px solid #3d3739;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.abt-product .all {
+    padding-left: 20px;
+}
+
+.abt-product .all p {
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 50px;
+}
+
+.abt-product .all a {
+    margin-top: auto;
+    text-decoration: underline;
+    color: #3d3739;
+}
+
+.abt-product .button-group {
+    margin-left: auto;
+}
+
+.abt-product .button-group a {
+    display: block;
+    margin-bottom: 10px;
+    border: 1px solid #3d3739;
+    width: 100%;
+    padding: 10px;
+    color: #000;
+    position: relative;
+    text-align: center;
+}
+
+.abt-product .button-group a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #3d3739;
+    z-index: -1;
+    transition: all .5s
+}
+
+.abt-product .button-group a:hover {
+    color: #fff;
+}
+
+.abt-product .button-group a:hover::before {
+    width: 100%;
+}
+
+@media(max-width:960px) {
+    .orders .acc-details {
+        width: 30%;
+    }
+
+    .orders .order-summary {
+        width: 70%;
+    }
+
+    .order-summary .child ul li {
+        padding: 0 10px;
+    }
+}
+
+@media(max-width:767px) {
+    .top-nav .nav-txt h3 {
+        font-size: 36px;
+    }
+
+    .top-nav .search-bar {
+        padding: 10px 0 5px 0;
+    }
+
+    .top-nav .search-bar .icons {
+        top: 21px;
+    }
+
+    .orders .acc-details {
+        width: 100%;
+    }
+
+    .orders .order-summary {
+        width: 100%;
+        padding: 0;
+    }
+
+    .order-summary .child ul {
+        display: flex;
+        padding: 30px 0;
+    }
+
+    .order-summary .child ul li {
+        padding: 0 10px;
+        font-size: 14px;
+    }
+
+    .order-details .sumup ul {
+        padding: 10px;
+    }
+
+    .order-details .sumup ul li {
+        padding: 0 15px;
+    }
+
+    .order-details .detailed {
+        padding: 0px 20px 10px 15px;
+    }
+
+    .order-details .detailed .date {
+        padding: 10px 0;
+    }
+
+    .order-details .detailed .date p {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .abt-product .all {
+        padding-left: 10px;
+    }
+
+    .abt-product .all p {
+        font-size: 16px;
+    }
+
+    .abt-product .button-group a {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:480px) {
+    .top-nav .container.flex {
+        display: block;
+    }
+
+    .top-nav .nav-txt h3 {
+        font-size: 24px;
+    }
+
+    .top-nav .search-bar {
+        padding: 10px 0 5px 0;
+    }
+
+    .top-nav .search-bar .icons {
+        top: 22px;
+    }
+
+    .orders .acc-details ul li {
+        font-size: 12px;
+    }
+
+    .order-details .sumup ul li {
+        padding: 10px;
+    }
+
+    .order-details .sumup ul li {
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .order-details .sumup ul li {
+        flex: 1;
+    }
+
+    .order-details .sumup ul li p {
+        font-size: 12px;
+    }
+
+    .order-details .detailed {
+        padding: 0px 10px 0px 10px;
+    }
+
+    .order-details .detailed .date p {
+        font-size: 12px;
+    }
+
+    .order-summary .child ul {
+        padding: 20px 0;
+    }
+
+    .order-summary .child ul li {
+        padding: 0 8px;
+        font-size: 12px;
+    }
+
+    .abt-product .all p {
+        font-size: 12px;
+        padding-bottom: 20px;
+    }
+
+    .abt-product .all a {
+        font-size: 12px;
+    }
+
+    .abt-product .button-group a {
+        width: 49%;
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .abt-product .button-group {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0
+    }
+}

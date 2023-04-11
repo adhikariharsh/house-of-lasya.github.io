@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/product-page.css">
+</head>
+
+<body>
+    <!-- Search bar section start -->
+    <section class="popup">
+        <div class="popup__content">
+            <div class="close">
+                <span></span>
+                <span></span>
+            </div>
+            <form action="">
+                <input type="search" placeholder="Search here...">
+                <input type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </form>
+        </div>
+    </section>
+    <!-- Search bar section close -->
+
+    <!-- Header Section Start -->
+    <header class="header header-secondary">
+        <div class="container">
+            <div class="top-head flex">
+                <div class="th-1">
+                    <a href="javascript:void(0)" class="toogle"><img src="images/menu.png" alt=""></a>
+                    <a href="javascript:void(0)" class="search-btn"><img src="images/search.png" alt=""></a>
+                </div>
+                <div class="th-2">
+                    <a href=""><img src="images/logo.png" alt=""></a>
+                </div>
+                <div class="th-3">
+                    <a href="cart.html"><img src="images/bag.png" alt=""></a>
+                    <a href="profile.html"><img src="images/profile.png" alt=""></a>
+                </div>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a class="active" href="">Collection</a></li>
+                    <li><a href="">Blogs</a></li>
+                    <li><a href="">Artist</a></li>
+                    <li><a href="">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section Close -->
+
+    <!-- breadcrumbs start -->
+    <div class="container">
+        <div class="nav-sec">
+            <ul>
+                <li>Home</li>
+                <li>Collection</li>
+                <li>Buddha</li>
+            </ul>
+        </div>
+    </div>
+    <!-- breadcrumbs close -->
+
+    <!-- Buy section starts -->
+    <section class="buy">
+        <div class="container flex">
+            <div class="big">
+                <img src="images/buddha-big.png" alt="">
+            </div>
+            <div class="buddha-details">
+                <div class="head flex">
+                    <h3>Buddha</h3>
+                    <p><i class="fa-sharp fa-solid fa-star"></i><span>4.91/5</span></p>
+                </div>
+                <div class="detail">
+                    <p>Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum,
+                        ac
+                        aliquet odio mattis. Class aptent taciti socios ad litora torquent per conubia nostra, per
+                        inceptos
+                        himenaeos.</p>
+                </div>
+                <div class="price flex">
+                    <h4>₹11009</h4><del>₹15009</del><span>33%off</span>
+                </div>
+                <div class="pin">
+                    <label>Check pincode<i class="fa-solid fa-circle-question"></i></label>
+                    <br>
+                    <input type="text" placeholder="Enter your pin-code here">
+                    <a href="">Check</a>
+                </div>
+                <div class="return">
+                    <p>Return Policy</p>
+                    <ul>
+                        <li><img src="images/refund.png" alt=""><a>Upto 7 Days Refundable</a></li>
+                        <li><img src="images/damage.png" alt=""><a>Damage Product Policy</a></li>
+                    </ul>
+                </div>
+                <div class="quantity">
+                    <h4>Select Quantity</h4>
+                    <div class="selection">
+                        <a href="#" class="quantity__minus"><i class="fa-solid fa-minus"></i></a>
+                        <input name="quantity" type="text" class="quantity__input" value="1">
+                        <a href="#" class="quantity__plus"><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                    <p>Minimum order quantity pack : 01</p>
+                </div>
+                <div class="frame flex">
+                    <p>Select frame:</p>
+                    <div class="frames flex">
+                        <div class="frame-1">
+                            <input type="radio" name="frame">
+                            <label>
+                                <img src="images/frame-1.png" alt="">
+                            </label>
+                        </div>
+                        <div class="frame-1">
+                            <input type="radio" name="frame">
+                            <label>
+                                <img src="images/frame-2.png" alt="">
+                            </label>
+                        </div>
+                        <div class="frame-1">
+                            <input type="radio" name="frame">
+                            <label>
+                                <img src="images/frame-3.png" alt="">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="btns flex">
+                    <a href="">Buy Now</a>
+                    <a href="">Add to cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Buy section close -->
+
+    <!-- Details section start -->
+    <section class="details">
+        <div class="container">
+            <div class="heading">
+                <h3>how it was made</h3>
+            </div>
+            <div class="ban">
+                <img src="images/buddha-banner.png" alt="">
+            </div>
+            <div class="txt">
+                <p>A pearls painting is a type of artwork that involves the use of small, round pearls to create a
+                    unique texture and visual effect. To make a pearls painting, the artist typically begins by
+                    selecting a suitable surface, such as canvas or board, and applying a layer of adhesive or glue to
+                    the surface.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Details section close -->
+
+    <!-- Rest images section start -->
+    <div class="rest-img">
+        <div class="container">
+            <div class="left-over-img flex">
+                <div class="img-1">
+                    <img src="images/buddha-1.png" alt="">
+                </div>
+                <div class="img-1">
+                    <img src="images/buddha-2.png" alt="">
+                </div>
+                <div class="img-1">
+                    <img src="images/buddha-3.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Rest images section close -->
+
+    <!-- Customer review section start -->
+    <section class="reviews">
+        <div class="container">
+            <div class="review-text">
+                <h3>CUSTOMER Reviews <span>(4.9/5)</span></h3>
+            </div>
+            <div class="review-slider">
+                <div>
+                    <div class="col flex">
+                        <div class="h-txt">
+                            <span>V</span>
+                            <p>Vipul Kumar<i class="fa-solid fa-circle-check"></i></p>
+                            <p><i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                5/5
+                            </p>
+                            <div class="h-body">
+                                <h3>A gorgeous piece of Art</h3>
+                                <p>The beauty of Buddha artwork lies in its ability to capture the essence of the
+                                    Buddha's
+                                    teachings
+                                    in a visual form. The serene expression on the Buddha's face, the calmness of his
+                                    posture,
+                                    and
+                                    the overall aura of tranquility that emanates from the artwork can be deeply
+                                    soothing
+                                    and
+                                    meditative.</p>
+                            </div>
+                            <div class="rev flex">
+                                <p>Was this review helpful?</p>
+                                <p><i class="fa-solid fa-thumbs-up"></i>05</p>
+                                <p><i class="fa-solid fa-thumbs-down"></i>00</p>
+                            </div>
+                        </div>
+                        <div class="p-img">
+                            <img src="images/product-buddha.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="col flex">
+                        <div class="h-txt">
+                            <span>V</span>
+                            <p>Vipul Kumar<i class="fa-solid fa-circle-check"></i></p>
+                            <p><i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                5/5
+                            </p>
+                            <div class="h-body">
+                                <h3>A gorgeous piece of Art</h3>
+                                <p>The beauty of Buddha artwork lies in its ability to capture the essence of the
+                                    Buddha's
+                                    teachings
+                                    in a visual form. The serene expression on the Buddha's face, the calmness of his
+                                    posture,
+                                    and
+                                    the overall aura of tranquility that emanates from the artwork can be deeply
+                                    soothing
+                                    and
+                                    meditative.</p>
+                            </div>
+                            <div class="rev flex">
+                                <p>Was this review helpful?</p>
+                                <p><i class="fa-solid fa-thumbs-up"></i>05</p>
+                                <p><i class="fa-solid fa-thumbs-down"></i>00</p>
+                            </div>
+                        </div>
+                        <div class="p-img">
+                            <img src="images/product-buddha.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="col flex">
+                        <div class="h-txt">
+                            <span>V</span>
+                            <p>Vipul Kumar<i class="fa-solid fa-circle-check"></i></p>
+                            <p><i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                5/5
+                            </p>
+                            <div class="h-body">
+                                <h3>A gorgeous piece of Art</h3>
+                                <p>The beauty of Buddha artwork lies in its ability to capture the essence of the
+                                    Buddha's
+                                    teachings
+                                    in a visual form. The serene expression on the Buddha's face, the calmness of his
+                                    posture,
+                                    and
+                                    the overall aura of tranquility that emanates from the artwork can be deeply
+                                    soothing
+                                    and
+                                    meditative.</p>
+                            </div>
+                            <div class="rev flex">
+                                <p>Was this review helpful?</p>
+                                <p><i class="fa-solid fa-thumbs-up"></i>05</p>
+                                <p><i class="fa-solid fa-thumbs-down"></i>00</p>
+                            </div>
+                        </div>
+                        <div class="p-img">
+                            <img src="images/product-buddha.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Customer review section close -->
+
+    <!-- You also like section start close -->
+    <section class="might-like">
+        <div class="container">
+            <div class="might-like-text">
+                <h3>you might also like</h3>
+            </div>
+            <div class="swapper flex">
+                <div class="column">
+                    <div class="image">
+                        <img src="images/bg-s.png" alt="">
+                    </div>
+                    <div class="text flex">
+                        <p>Bal Gopal</p>
+                        <p>&#8377;1299</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="image">
+                        <img src="images/b-s.png" alt="">
+                    </div>
+                    <div class="text flex">
+                        <p>Bal Gopal</p>
+                        <p>&#8377;1299</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="image">
+                        <img src="images/m-s.png" alt="">
+                    </div>
+                    <div class="text flex">
+                        <p>Bal Gopal</p>
+                        <p>&#8377;1299</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="image">
+                        <img src="images/g-s.png" alt="">
+                    </div>
+                    <div class="text flex">
+                        <p>Bal Gopal</p>
+                        <p>&#8377;1299</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="image">
+                        <img src="images/b-s.png" alt="">
+                    </div>
+                    <div class="text flex">
+                        <p>Bal Gopal</p>
+                        <p>&#8377;1299</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="image">
+                        <img src="images/m-s.png" alt="">
+                    </div>
+                    <div class="text flex">
+                        <p>Bal Gopal</p>
+                        <p>&#8377;1299</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="image">
+                        <img src="images/bg-s.png" alt="">
+                    </div>
+                    <div class="text flex">
+                        <p>Bal Gopal</p>
+                        <p>&#8377;1299</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="image">
+                        <img src="images/g-s.png" alt="">
+                    </div>
+                    <div class="text flex">
+                        <p>Bal Gopal</p>
+                        <p>&#8377;1299</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- You also like section start close -->
+
+    <!-- footer section start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <img src="images/name.png" alt="">
+            </div>
+            <div class="row flex">
+                <div class="cols">
+                    <ul>
+                        <li><a href="">Collection</a></li>
+                        <li><a href="">Blogs</a></li>
+                        <li><a href="">Artist</a></li>
+                    </ul>
+                </div>
+                <div class="cols">
+                    <ul>
+                        <li><a href="">Return Policy</a></li>
+                        <li><a href="">Order Online</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="cols">
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Account</a></li>
+                        <li><a href="">Delivery</a></li>
+                    </ul>
+                </div>
+                <div class="letter">
+                    <form>
+                        <p>Subscribe to receive grape news & offers</p>
+                        <div class="form-group mailfield">
+                            <input type="text" placeholder="Enter your Email" class="form-in">
+                            <span>
+                                <input type="submit" value="submit">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </span>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox"><label>I consent to lasyaarthouse sending me marketing
+                                communications</label>
+                        </div>
+                    </form>
+                    <div class="socials">
+                        <ul>
+                            <li><a href="">Instagram</a></li>
+                            <li><a href="">Twitter</a></li>
+                            <li><a href="">Facebook</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section close -->
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/custom.js"></script>
+
+</html>

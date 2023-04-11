@@ -1,0 +1,389 @@
+.cart {
+    padding: 30px 0 90px;
+}
+
+.cart .cart-title {
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.cart .cart-title h3 {
+    text-transform: uppercase;
+}
+
+.cart .cart-title h3 span {
+    font-size: 38px;
+    text-transform: lowercase;
+}
+
+.cart .cart-title p {
+    text-decoration: underline;
+}
+
+.cart .main-cart .item-details {
+    width: 70%;
+}
+
+.cart .main-cart .summary {
+    width: 30%;
+}
+
+.cart .main-cart .cart-1 {
+    border: .5px solid #3d3739;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+
+.cart .main-cart .cart-1 .image {
+    width: 20%;
+}
+
+.cart .main-cart .cart-1 .image a img {
+    width: 100%;
+    display: block;
+}
+
+.cart .main-cart .product-details {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 5px 10px 10px 10px;
+}
+
+.name-price,
+.name-price-detail {
+    justify-content: space-between;
+}
+
+.name-price p {
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+.name-price-detail p,
+.name-price-detail a {
+    text-transform: capitalize;
+    padding-bottom: 50px;
+    font-size: 16px;
+    color: #000;
+}
+
+.cart-1 .quantity {
+    justify-content: space-between;
+}
+
+.cart-1 .quantity a {
+    color: #000;
+    font-size: 16px;
+}
+
+.cart-1 .quantity .fa-trash {
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.cart .main-cart .summary {
+    width: 30%;
+    padding-left: 30px;
+}
+
+.item-details .total {
+    text-align: right;
+}
+
+.item-details .total p {
+    font-size: 24px;
+}
+
+.item-details .total p span {
+    font-weight: bold;
+}
+
+.summary .payment {
+    padding-bottom: 80px;
+    position: relative;
+}
+
+.summary .payment input[type="button"] {
+    position: absolute;
+    background: transparent;
+    border: none;
+    outline: none;
+    right: 10px;
+    top: 58px;
+    font-size: 14px;
+    opacity: .9;
+    cursor: pointer;
+}
+
+.summary .payment p {
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+.summary .payment .pincode {
+    width: 100%;
+    height: 35px;
+    outline: none;
+    padding: 5px 10px;
+
+}
+
+::placeholder {
+    text-transform: capitalize;
+}
+
+.summary .bill .money {
+    justify-content: space-between;
+}
+
+.summary .bill .money p {
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+
+.summary .bill .checkout {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.summary .bill .checkout a {
+    text-align: center;
+    color: #000;
+    border: 1px solid #3d3739;
+    padding: 10px;
+    width: 100px;
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.summary .bill .checkout a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #3d3739;
+    z-index: -1;
+    transition: all .5s
+}
+
+.summary .bill .checkout a:hover {
+    color: #fff;
+}
+
+.summary .bill .checkout a:hover::before {
+    width: 100%;
+}
+
+.summary .bill .continue {
+    text-align: center;
+}
+
+.summary .bill .continue a {
+    font-size: 14px;
+    text-decoration: underline;
+    color: #000;
+}
+
+@media(max-width:960px) {
+    .cart .cart-title p {
+        margin-top: 10px;
+    }
+
+    .cart .main-cart .item-details {
+        width: 60%;
+    }
+
+    .cart .main-cart .summary {
+        width: 40%;
+    }
+
+    .cart .main-cart .cart-1 .image {
+        width: 30%;
+    }
+
+    .cart .main-cart .product-details {
+        width: 70%;
+    }
+}
+
+@media(max-width:767px) {
+    .cart {
+        padding: 20px 0 70px;
+    }
+
+    .cart .cart-title h3 {
+        font-size: 36px;
+    }
+
+    .cart .cart-title h3 span {
+        font-size: 28px;
+    }
+
+    .cart .cart-title {
+        padding-bottom: 20px;
+    }
+
+    .cart .cart-title p {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .cart .main-cart .item-details {
+        width: 100%;
+    }
+
+    .cart .main-cart .summary {
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .cart .main-cart .cart-1 {
+        margin-bottom: 20px;
+    }
+
+    .summary .payment {
+        padding-bottom: 50px;
+    }
+
+    .item-details .total p {
+        font-size: 20px;
+    }
+
+    .summary .payment p {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    .summary .payment input[type="button"] {
+        top: 42px;
+    }
+
+    .item-details .total {
+        text-align: center;
+        padding: 5px 0px 10px;
+    }
+}
+
+@media(max-width:480px) {
+    .cart {
+        padding: 10px 0 40px;
+    }
+
+    .cart .main-cart .cart-1 .image {
+        width: 35%;
+    }
+
+    .cart .main-cart .product-details {
+        width: 65%;
+    }
+
+    .cart .cart-title h3 {
+        font-size: 24px;
+    }
+
+    .cart .cart-title h3 span {
+        font-size: 18px;
+    }
+
+    .cart .cart-title p {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .name-price p {
+        padding-bottom: 7px;
+        font-size: 12px;
+    }
+
+    .name-price-detail p,
+    .name-price-detail a {
+        padding-bottom: 25px;
+        font-size: 14px;
+    }
+
+    .cart-1 .quantity a {
+        font-size: 12px;
+    }
+
+    .cart-1 .quantity .fa-trash {
+        font-size: 12px;
+        margin-right: 5px;
+    }
+
+    .quantity .selection {
+        margin-right: 0px;
+        padding: 2px 5px;
+    }
+
+    .quantity__minus,
+    .quantity__plus {
+        width: 15px;
+        height: 15px;
+    }
+
+    .quantity__input {
+        width: 22px;
+        font-size: 14px;
+    }
+
+    .cart .main-cart .cart-1 {
+        margin-bottom: 10px;
+    }
+
+    .item-details .total p {
+        font-size: 14px;
+    }
+
+    .summary .payment p {
+        font-size: 14px;
+        padding-bottom: 5px;
+    }
+
+    .summary .payment input[type="button"] {
+        top: 31px;
+    }
+
+    .summary .payment {
+        padding-bottom: 30px;
+    }
+
+    .summary .bill .money p {
+        padding-bottom: 15px;
+        font-size: 12px;
+    }
+
+    .summary .bill .continue a {
+        font-size: 12px;
+    }
+}
+
+@media(max-width:320px) {
+    .cart .cart-title h3 {
+        font-size: 20px;
+    }
+
+    .cart .cart-title h3 span {
+        font-size: 15px;
+    }
+
+    .name-price p {
+        padding-bottom: 5px;
+    }
+
+    .name-price-detail p,
+    .name-price-detail a {
+        padding-bottom: 15px;
+        font-size: 12px;
+    }
+
+    .summary .bill .checkout a {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,176 @@
+.banner-1 {
+    position: relative;
+}
+
+.banner-1 img {
+    width: 100%;
+}
+
+.banner-1 .bann-txt {
+    opacity: .5;
+    position: absolute;
+    bottom: 3px;
+    background-color: #3d3739;
+    width: 100%;
+    padding: 20px 0 20px 80px;
+    font-weight: 500;
+}
+
+.banner-1 .bann-txt h2 {
+    color: #fff;
+    opacity: 1;
+    text-transform: uppercase;
+}
+
+.sofia {
+    padding: 50px 0;
+    position: relative;
+}
+
+.sofia::after {
+    position: absolute;
+    content: '';
+    background-color: #F6EEDB;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    z-index: -1;
+}
+
+.sofia .container {
+    padding: 0 0 0 90px;
+}
+
+.sofia .sofia-txt h3 {
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.sofia .sofia-txt p {
+    padding-bottom: 30px;
+}
+
+.sofia .about-sofia {
+    max-width: 80%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.sofia .about-sofia .sofia-img {
+    width: 50%;
+    position: relative;
+    z-index: 999;
+}
+
+.sofia .about-sofia .sofia-img::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    right: -15px;
+    bottom: -15px;
+    position: absolute;
+    border: 1px solid #000;
+    z-index: -1;
+}
+
+.sofia .about-sofia .sofia-img img {
+    width: 100%;
+}
+
+.sofia .about-sofia .sofia-thought {
+    width: 50%;
+    font-style: italic;
+    padding-left: 80px;
+}
+
+.sofia .about-sofia .sofia-thought p {
+    line-height: 30px;
+    margin: 0 0 70px 0;
+}
+
+.sofia .about-sofia .sofia-thought.born {
+    padding-left: 0;
+    padding-right: 80px;
+}
+
+@media(max-width:767px) {
+    .banner-1 .bann-txt {
+        padding: 10px 0 10px 20px;
+    }
+
+    .banner-1 .bann-txt h2 {
+        font-size: 44px;
+    }
+
+    .sofia {
+        padding: 30px 0;
+        position: relative;
+    }
+
+    .sofia .container {
+        padding: 0px 20px;
+    }
+
+    .sofia .sofia-txt h3 {
+        padding-bottom: 10px;
+        font-size: 36px;
+    }
+
+    .sofia .sofia-txt p {
+        font-size: 14px;
+    }
+
+    .sofia .about-sofia {
+        max-width: 100%;
+    }
+
+    .sofia .about-sofia .sofia-img {
+        width: 100%;
+    }
+
+    .sofia .about-sofia .sofia-thought {
+        width: 100%;
+        padding: 40px 0 0 0;
+    }
+
+    .sofia .about-sofia .sofia-thought p {
+        line-height: 20px;
+        margin: 0 0 10px 0;
+    }
+
+    .sofia::after {
+        bottom: 70px;
+    }
+
+    .sofia .sofia-txt p {
+        padding-bottom: 10px;
+    }
+
+    .sofia .about-sofia .sofia-thought.born {
+        padding-right: 0px;
+    }
+}
+
+@media(max-width:480px) {
+    .banner-1 .bann-txt h2 {
+        font-size: 26px;
+    }
+
+    .banner-1 .bann-txt {
+        padding: 8px 0 8px 18px;
+    }
+
+    .sofia {
+        padding: 20px 0;
+    }
+
+    .sofia .sofia-txt h3 {
+        padding-bottom: 5px;
+        font-size: 26px;
+    }
+
+    .sofia .sofia-txt p {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,266 @@
+.nav-sec ul {
+    display: flex;
+    padding-top: 30px;
+}
+
+.nav-sec ul li {
+    padding-right: 20px;
+    position: relative;
+}
+
+.nav-sec ul li::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #3D3739;
+    top: 7px;
+    left: -12px;
+}
+
+.our-collection .nav-sec ul li:first-of-type::after {
+    display: none;
+}
+
+.our-collection .collec-text {
+    padding-top: 40px;
+}
+
+.our-collection .collec-text h2 {
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+.our-collection .collec-text p {
+    margin-bottom: 20px;
+}
+
+.exp .filter {
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.exp .filter ul {
+    display: flex;
+    align-items: center;
+}
+
+.exp .filter ul li {
+    border: 1px solid #000;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 0 15px 0 0;
+}
+
+.exp .filter ul li.active {
+    background-color: #3d3739;
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: #fff;
+}
+
+.exp .filter .fa-solid {
+    margin-left: 5px;
+}
+
+.exp .filter .color {
+    align-items: center;
+}
+
+.exp .color {
+    display: flex;
+    align-items: center;
+}
+
+.exp .color input {
+    margin-left: 10px;
+}
+
+.exp .color .fa-solid {
+    font-size: 12px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.exp.flex {
+    justify-content: space-between;
+}
+
+.exp .sort .fa-solid {
+    font-size: 12px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.show p {
+    margin-bottom: 15px;
+}
+
+.our-collection .cards .column {
+    width: 25%;
+    padding: 0 15px 0 0;
+}
+
+.our-collection .cards .column .img {
+    position: relative;
+    overflow: hidden;
+}
+
+.our-collection .cards .column .img img {
+    display: block;
+}
+
+.our-collection .cards .column .img .cart {
+    position: absolute;
+    left: 0;
+    bottom: -43px;
+    color: #fff;
+    background-color: #3D3739;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.our-collection .cards .column .img:hover .cart {
+    bottom: 0px;
+}
+
+.our-collection .cards .column img {
+    width: 100%;
+}
+
+.our-collection .cards .card-text .head-text {
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.our-collection .cards .card-text .head-text h5 {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.our-collection .cards .card-text .desc {
+    justify-content: space-between;
+}
+
+.our-collection .cards .card-text .desc p {
+    margin-bottom: 40px;
+}
+
+@media(max-width:767px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .nav-sec ul li {
+        font-size: 14px;
+    }
+
+    .our-collection .collec-text {
+        padding-top: 20px;
+    }
+
+    .our-collection .collec-text h2 {
+        font-size: 44px;
+    }
+
+    .our-collection .collec-text p {
+        font-size: 14px;
+    }
+
+    .exp .filter ul li.active {
+        padding: 9px 25px;
+        font-size: 14px;
+    }
+
+    .exp .filter ul li {
+        padding: 9px 25px;
+        font-size: 14px;
+    }
+
+    .exp .filter .color {
+        align-items: center;
+        padding: 20px 0 0 0;
+    }
+
+    .color p {
+        font-size: 14px;
+    }
+
+    .exp .sort .fa-solid {
+        font-size: 11px;
+        margin-left: 5px;
+    }
+
+    .our-collection .cards .column {
+        width: 50%;
+        padding: 0 10px 0 0;
+    }
+}
+
+@media (max-width:480px) {
+    .nav-sec ul {
+        display: flex;
+        padding-top: 20px;
+    }
+
+    .our-collection .collec-text {
+        padding-top: 10px;
+    }
+
+    .our-collection .collec-text h2 {
+        font-size: 30px;
+        padding-bottom: 0;
+    }
+
+    .our-collection .collec-text p {
+        font-size: 12px;
+    }
+
+    .our-collection .cards .column {
+        width: 100%;
+        padding: 0 0px 0 0;
+    }
+
+    .our-collection .cards .card-text .head-text h5,
+    .our-collection .cards .card-text .head-text p {
+        font-size: 14px;
+    }
+
+    .our-collection .cards .card-text .desc p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .exp .filter ul {
+        display: inline-block;
+    }
+
+    .exp .filter ul li.active {
+        padding: 7px 12px;
+        font-size: 12px;
+    }
+
+    .exp .filter ul li {
+        padding: 7px 12px;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .exp .filter .color {
+        align-items: center;
+        padding: 20px 0 0 20px;
+    }
+
+    .show p {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+}

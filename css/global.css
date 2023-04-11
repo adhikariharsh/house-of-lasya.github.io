@@ -1,0 +1,1315 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300&family=Raleway:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 54px;
+}
+
+h3 {
+    font-size: 46px;
+}
+
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.quantity {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.quantity .selection {
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    padding: 5px 6px;
+    margin-right: 10px;
+}
+
+.quantity__minus,
+.quantity__plus {
+    width: 22px;
+    height: 23px;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+}
+
+
+.quantity__input {
+    width: 32px;
+    text-align: center;
+    color: #000;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.color-radio-btn {
+    position: relative;
+    margin: 0 5px;
+}
+
+.color-radio-btn label {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background: transparent;
+    border-radius: 50%;
+}
+
+.color-radio-btn input[type="radio"] {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin: 0 !important;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 1;
+}
+
+.color-radio-btn input[type="radio"]:checked+label {
+    box-shadow: 0 0 0 1px #472F1E, inset 0 0 0 2px #fff;
+}
+
+.color-yellow label {
+    background: #E5AF30;
+}
+
+.color-cream label {
+    background: #E9D077;
+}
+
+.color-green label {
+    background: #B2E382;
+}
+
+.color-blue label {
+    background: #7FACEE;
+}
+
+.color-red label {
+    background: #E98F5C;
+}
+
+.nav-sec ul {
+    display: flex;
+    padding-top: 30px;
+}
+
+.nav-sec ul li {
+    padding-right: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-sec ul li::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #3D3739;
+    top: 7px;
+    left: -12px;
+}
+
+.nav-sec ul li:first-of-type:after {
+    display: none;
+}
+
+.popup {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: none;
+}
+
+.popup form {
+    display: flex;
+    position: relative;
+}
+
+.popup__content {
+    width: 80%;
+    height: 100%;
+    overflow: auto;
+    padding: 100px 0 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close {
+    position: absolute;
+    right: 12px;
+    top: 45px;
+    width: 20px;
+    display: block;
+}
+
+.close span {
+    cursor: pointer;
+    position: fixed;
+    width: 20px;
+    height: 3px;
+    background: #fff;
+}
+
+.close span:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.close span:nth-child(2) {
+    transform: rotate(135deg);
+}
+
+.popup input[type="search"] {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-size: 25px;
+    padding: 10px 50px 10px 0;
+}
+
+.popup input[type="search"]::placeholder {
+    color: #fff;
+    font-size: 20px;
+}
+
+.popup input[type="submit"] {
+    background: transparent;
+    font-size: 0;
+    position: absolute;
+    right: 1px;
+    top: 9px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 40px;
+    height: 35px;
+    z-index: 1;
+}
+
+.popup .fa-solid {
+    position: absolute;
+    right: 10px;
+    top: 16px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.header-secondary {
+    position: unset;
+    background-color: #F6EEDB;
+    box-shadow: none;
+    padding: 0 0 10px;
+}
+
+.top-head {
+    justify-content: space-between;
+    padding: 10px 0;
+    align-items: center;
+    position: relative;
+}
+
+.top-head .search-bar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top-head .th-2 a img {
+    width: 30px;
+}
+
+.top-head .th-1 a img {
+    padding-right: 20px;
+}
+
+.top-head .th-3 a img {
+    padding-left: 20px;
+}
+
+.header .navbar {
+    width: 70%;
+    margin: 0 auto 10px;
+}
+
+.header .navbar ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .navbar ul li a {
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.header .navbar ul li a.active {
+    font-weight: 600;
+}
+
+.header .text {
+    text-align: center;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.banner .text {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+}
+
+.banner .text h1 {
+    font-size: 54px;
+    font-size: 200;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.banner .text img {
+    width: auto;
+    height: auto;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.new-arrival {
+    width: 100%;
+    padding: 80px 0 0;
+}
+
+.new-arr-text {
+    margin-bottom: 40px;
+}
+
+.new-arr-text h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.new-arrival .card .column {
+    text-align: center;
+    width: 33.33%;
+    padding: 15px;
+}
+
+.new-arrival .card .column .image {
+    background-color: #F6EEDB;
+    padding: 50px 45px;
+    margin-bottom: 10px;
+}
+
+.new-arrival .card .column .image img {
+    border: 1px solid #3D3739;
+    padding: 10px;
+}
+
+.new-arrival .card .column h5 {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.new-arrival .card .column p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.new-arrival .card ul.slick-dots {
+    text-align: center;
+    display: flex;
+    width: 100%;
+    padding-bottom: 100px;
+    cursor: pointer;
+}
+
+.new-arrival .card ul.slick-dots li {
+    flex: 1;
+}
+
+.new-arrival .card .slick-dots button {
+    font-size: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #d9d9d9;
+    outline: none;
+    border: 0;
+    opacity: 0.35;
+
+}
+
+.new-arrival .card .slick-dots .slick-active button {
+    opacity: 1;
+    background: #868283;
+}
+
+.discover {
+    width: 100%;
+}
+
+.discover .col-1 {
+    width: 50%;
+    position: relative;
+}
+
+.discover .col-1::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #3D3739;
+    top: 10px;
+    left: 10px;
+    z-index: -1;
+}
+
+.discover .col-1 img {
+    width: 100%;
+}
+
+.discover .col-2 {
+    width: 50%;
+}
+
+.discover .col-2 .text h3 {
+    text-transform: uppercase;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+.discover .col-2 .text p {
+    color: #1f1f1f;
+    font-size: 16px;
+}
+
+.discover .col-2 .text {
+    position: relative;
+    padding: 0 0px 0 60px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.discover .col-2 .text .btn {
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.discover .col-2 .text .btn a {
+    border: 1px solid #000;
+    font-size: 16px;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    color: #000;
+    display: inline-block;
+    position: relative;
+}
+
+.discover .col-2 .text .btn a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #3d3739;
+    z-index: -1;
+    transition: all .5s
+}
+
+.discover .col-2 .text .btn a:hover {
+    color: #fff;
+}
+
+.discover .col-2 .text .btn a:hover::before {
+    width: 100%;
+}
+
+.arts {
+    padding: 80px 0 0;
+}
+
+.all-collection img {
+    width: 100%;
+    height: 550px;
+}
+
+.arts .row {
+    width: 100%;
+    background: #F6EEDB;
+    padding: 70px 0 200px;
+}
+
+.arts .arts-text {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 35px;
+}
+
+.arts .arts-text h3 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.arts .arts-text p {
+    color: #1f1f1f;
+    font-size: 16px;
+}
+
+.arts .watching {
+    max-width: 50%;
+    margin: -150px auto 0;
+    position: relative;
+}
+
+.arts .watching::after {
+    content: '';
+    position: absolute;
+    border: 1px solid #3D3739;
+    height: 100%;
+    width: calc(100% + 26px);
+    top: 10px;
+    left: -13px;
+    z-index: -1;
+}
+
+.arts .watching img {
+    width: 100%;
+}
+
+.check {
+    padding: 80px 0 100px;
+}
+
+.check .text {
+    text-align: center;
+}
+
+.check .text h3 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.check .text p {
+    margin-bottom: 50px;
+}
+
+.check .images {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.check .images .img-1 {
+    width: 25%;
+    padding: 0 10px;
+}
+
+.check .images .img-1 img {
+    width: 100%;
+}
+
+.check .insta-btn {
+    text-align: center;
+}
+
+.check .insta-btn a {
+    border: 1px solid #000;
+    padding: 10px 30px;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 300;
+    position: relative;
+}
+
+.check .insta-btn a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #3d3739;
+    z-index: -1;
+    transition: all .5s
+}
+
+.check .insta-btn a:hover {
+    color: #fff;
+}
+
+.check .insta-btn a:hover::before {
+    width: 100%;
+}
+
+.footer {
+    width: 100%;
+    background-color: #f6eedb;
+    padding: 50px 0 0;
+}
+
+.footer .row img {
+    margin-bottom: 20px;
+}
+
+.footer .row {
+    position: relative;
+}
+
+.footer .row::after {
+    content: '';
+    width: 2px;
+    height: 100px;
+    position: absolute;
+    background-color: #3d3739;
+    top: 60px;
+    left: 40px;
+    opacity: .5;
+}
+
+.footer .row:first-of-type:before {
+    content: '';
+    width: calc(100% - 105px);
+    height: 2px;
+    background-color: #3D3739;
+    opacity: .5;
+    position: absolute;
+    top: 18px;
+    left: 105px;
+}
+
+.footer .row .cols {
+    width: 20%;
+    padding-left: 110px;
+}
+
+.footer .row .cols ul li {
+    margin-bottom: 20px;
+}
+
+.footer .row .cols ul li a {
+    color: #3D3739;
+    font-size: 16px;
+    transition: .5s;
+}
+
+.footer .row .cols ul li a:hover {
+    letter-spacing: 1px;
+}
+
+.footer .row .letter {
+    width: 40%;
+    padding-left: 40px;
+}
+
+.footer .row .letter form p {
+    font-size: 14px;
+    color: #3D3739;
+    margin-bottom: 10px;
+}
+
+.footer .row .letter .form-in {
+    width: calc(100% - 40px);
+    border: 0;
+    outline: none;
+    border: none;
+    line-height: 1.5;
+    padding: 8px 10px;
+}
+
+::placeholder {
+    font-size: 14px;
+    color: #cfcfcf;
+}
+
+.letter .mailfield {
+    display: flex;
+    background: #fff;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.letter span {
+    width: 40px;
+    position: relative;
+}
+
+.letter input[type="submit"] {
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.form-group .fa-solid {
+    position: absolute;
+    top: 13px;
+    right: 15px;
+    font-size: 12px;
+}
+
+.footer .row .letter .form-group label {
+    font-size: 12px;
+    margin-left: 5px;
+    color: #3D3739;
+}
+
+.letter .socials ul {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.letter .socials ul li {
+    margin-top: 40px;
+}
+
+.letter .socials ul li a::after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #3D3739;
+    position: absolute;
+    top: 8px;
+    left: 0px;
+}
+
+
+.letter .socials ul li:first-of-type a:after {
+    display: none;
+}
+
+.letter .socials ul li a {
+    font-size: 16px;
+    color: #3D3739;
+    font-weight: 400;
+    position: relative;
+    padding: 0 20px;
+}
+
+.might-like {
+    padding-top: 100px;
+}
+
+.might-like .might-like-text h3 {
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.might-like .swapper .column {
+    width: 25%;
+    padding: 0;
+}
+
+.might-like .swapper .column .image img {
+    width: 100%;
+}
+
+.might-like .swapper .column .text {
+    justify-content: space-between;
+}
+
+.might-like .swapper .column .text p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.swapper ul.slick-dots {
+    text-align: center;
+    display: flex;
+    width: 100%;
+    padding-bottom: 100px;
+    cursor: pointer;
+    padding-top: 20px;
+}
+
+.swapper ul.slick-dots li {
+    flex: 1;
+}
+
+.swapper ul.slick-dots button {
+    font-size: 0px;
+    width: 100%;
+    height: 2px;
+    background-color: #d9d9d9;
+    outline: none;
+    border: 0;
+    opacity: 0.35;
+}
+
+.swapper .slick-dots .slick-active button {
+    opacity: 1;
+    background: #868283;
+}
+
+@media(max-width:1280px) {
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@media(max-width:1080px) {
+    .banner .text h1 {
+        font-size: 44px;
+        margin-bottom: 6px;
+    }
+
+    .banner .text p {
+        font-size: 14px;
+    }
+
+    .banner .text img {
+        margin-top: 14px;
+    }
+
+    .new-arr-text {
+        margin-bottom: 20px;
+    }
+
+    .new-arr-text h2 {
+        font-size: 44px;
+    }
+
+    .new-arrival {
+        padding: 50px 0 0;
+    }
+
+    .new-arrival .card .column .image {
+        padding: 40px 30px;
+        margin-bottom: 10px;
+    }
+
+    .new-arrival .card .column h5 {
+        font-size: 22px;
+    }
+
+    .new-arrival .card .column p {
+        font-size: 18px;
+    }
+
+    .new-arrival .card .column {
+        width: 33.33%;
+        padding: 10px;
+    }
+
+    .new-arrival .card ul.slick-dots {
+        padding-bottom: 70px;
+    }
+
+    .discover .col-2 .text {
+        padding: 0 0px 0 40px;
+    }
+
+    .discover .col-2 .text h3 {
+        margin-bottom: 10px;
+        font-size: 36px;
+    }
+
+    .discover .col-2 .text p {
+        font-size: 14px;
+    }
+
+    .discover .col-2 .text .btn a {
+        font-size: 15px;
+        padding: 10px 30px;
+    }
+
+    .all-collection img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .arts .arts-text h3 {
+        font-size: 36px;
+    }
+
+    .arts .arts-text p {
+        font-size: 14px;
+        padding: 0 20px;
+    }
+
+    .arts .watching {
+        margin: -90px auto 0;
+    }
+
+    .arts .row {
+        padding: 70px 0 130px;
+    }
+
+    .check {
+        padding: 50px 0 0;
+    }
+
+    .check .text h3 {
+        margin-bottom: 0px;
+    }
+
+    .check .text p {
+        margin-bottom: 30px;
+        font-size: 14px;
+    }
+
+    .check .images {
+        margin-bottom: 40px;
+    }
+
+    .check .insta-btn a {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+
+    .check .insta-btn {
+        margin-bottom: 70px;
+    }
+
+    .footer .row .cols {
+        padding-left: 70px;
+    }
+
+    .footer .row .cols ul li a {
+        font-size: 14px;
+    }
+
+    .footer .row .letter {
+        padding-left: 20px;
+    }
+
+    .letter .socials ul li {
+        margin-top: 30px;
+    }
+
+    .letter .socials ul li a {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+}
+
+@media(max-width:1024px) {
+    .new-arrival .card .column .image img {
+        width: 100%;
+    }
+}
+
+@media(max-width:767px) {
+    .header .navbar {
+        display: none;
+        background: #fff;
+        padding: 20px 30px;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        height: 100vh;
+        width: 100%;
+        z-index: 99;
+    }
+
+    .header .navbar ul {
+        display: block;
+    }
+
+    .header .navbar ul li {
+        padding: 15px 0;
+    }
+
+    .header-secondary {
+        padding: 0;
+    }
+
+    .banner .text h1 {
+        font-size: 34px;
+    }
+
+    .banner .text p {
+        font-size: 12px;
+    }
+
+    .new-arrival {
+        padding: 30px 0 0;
+    }
+
+    .new-arr-text h2 {
+        font-size: 34px;
+    }
+
+    .new-arrival .card .column .image {
+        padding: 30px 20px;
+        margin-bottom: 10px;
+    }
+
+    .new-arrival .card .column h5 {
+        font-size: 20px;
+    }
+
+    .new-arrival .card .column p {
+        font-size: 16px;
+    }
+
+    .new-arrival .card ul.slick-dots {
+        padding-bottom: 40px;
+    }
+
+    .discover .col-1 {
+        width: 100%;
+    }
+
+    .discover .col-2 {
+        width: 100%;
+    }
+
+    .discover .col-2 .text {
+        padding: 20px 0px 0 0px;
+    }
+
+    .discover .col-2 .text h3 {
+        font-size: 26px;
+    }
+
+    .discover .col-2 .text h3 br {
+        display: none;
+    }
+
+    .discover .col-2 .text p {
+        font-size: 12px;
+    }
+
+    .discover .col-2 .text .btn {
+        margin: 20px auto 0;
+    }
+
+    .discover .col-2 .text .btn a {
+        font-size: 12px;
+        padding: 8px 25px;
+    }
+
+    .arts {
+        padding: 30px 0 0;
+    }
+
+    .arts .row {
+        padding: 40px 0 90px;
+    }
+
+    .arts .arts-text {
+        padding-top: 25px;
+    }
+
+    .arts .arts-text h3 {
+        font-size: 26px;
+    }
+
+    .arts .arts-text p {
+        font-size: 12px;
+        padding: 0 10px;
+    }
+
+    .arts .watching {
+        margin: -70px auto 0;
+    }
+
+    .arts .watching::after {
+        top: 5px;
+    }
+
+    .check .images {
+        margin-bottom: 20px;
+    }
+
+    .check .images .img-1 {
+        width: 50%;
+        padding: 5px;
+    }
+
+    .check .text h3 {
+        font-size: 36px;
+    }
+
+    .check .text p {
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+
+    .check .insta-btn {
+        margin-bottom: 50px;
+    }
+
+    .check .insta-btn a {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    .footer {
+        padding: 30px 0 0;
+    }
+
+    .footer .row .cols {
+        width: 50%;
+        padding-left: 30px;
+    }
+
+    .footer .row .cols:nth-child(2) {
+        padding-left: 0px;
+    }
+
+    .footer .row .cols ul li {
+        margin-bottom: 10px;
+    }
+
+    .footer .row .cols ul li a {
+        font-size: 12px;
+    }
+
+    .footer .row::after {
+        left: 0px;
+    }
+
+    .footer .row .letter {
+        padding-left: 0px;
+    }
+
+    .footer .row .letter form p {
+        font-size: 10px;
+    }
+
+    .footer .row .letter .form-group label {
+        font-size: 10px;
+    }
+
+    .letter .socials ul {
+        margin-bottom: 10px;
+    }
+
+    .letter .socials ul li a {
+        font-size: 12px;
+        padding: 0 8px;
+    }
+
+    .letter .socials ul li a::after {
+        width: 3px;
+        height: 3px;
+        top: 7px;
+        left: -1px;
+    }
+
+    .might-like {
+        padding-top: 50px;
+    }
+
+    .might-like .might-like-text h3 {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    .might-like .swapper .column .text p {
+        font-size: 16px;
+    }
+
+    .swapper ul.slick-dots {
+        padding-bottom: 50px;
+        padding-top: 10px;
+    }
+}
+
+
+@media(max-width:480px) {
+    .banner .text h1 {
+        font-size: 20px;
+    }
+
+    .new-arrival {
+        padding: 20px 0 0;
+    }
+
+    .new-arr-text h2 {
+        font-size: 24px;
+    }
+
+    .new-arrival .card .column {
+        padding: 0px;
+    }
+
+    .discover .col-2 .text h3 {
+        font-size: 20px;
+    }
+
+    .arts .row {
+        padding: 25px 0 50px;
+    }
+
+    .arts .arts-text {
+        padding-top: 15px;
+    }
+
+    .arts .arts-text h3 {
+        font-size: 20px;
+    }
+
+    .arts .watching {
+        margin: -30px auto 0;
+    }
+
+    .check {
+        padding: 30px 0 0;
+    }
+
+    .check .text h3 {
+        font-size: 26px;
+    }
+
+    .check .text p {
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+
+    .check .insta-btn {
+        margin-bottom: 30px;
+    }
+
+    .footer .row::after {
+        height: 340px;
+    }
+
+    .footer .row .cols {
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .footer .row .cols:nth-child(2) {
+        padding-left: 20px;
+    }
+
+    .footer .row .cols ul {
+        padding-bottom: 10px;
+    }
+
+    .footer .row .cols ul li {
+        margin-bottom: 5px;
+    }
+
+    .footer .row .letter {
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .letter .socials ul li {
+        margin-top: 20px;
+    }
+
+    .letter .socials ul li a {
+        font-size: 12px;
+        padding: 0 13px;
+    }
+
+    .nav-sec ul li {
+        font-size: 12px;
+    }
+
+    .nav-sec ul {
+        padding-top: 20px;
+    }
+
+    .might-like {
+        padding-top: 30px;
+    }
+
+    .might-like .might-like-text h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .might-like .swapper .column .text p {
+        font-size: 12px;
+    }
+
+    .swapper ul.slick-dots {
+        padding-bottom: 30px;
+        padding-top: 5px;
+    }
+}
